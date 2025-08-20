@@ -119,6 +119,19 @@ function increment() {
     document.getElementById("count").innerText = count // update the HTML element with the new count
 }
 
+function save() {
+    // create a variable that contains the count and the string " - "
+    let countStr = count + " | "
+    
+    // get the element with id "save-el"
+    let saveEl = document.getElementById("save-el")
+    
+    // append the countStr to the saveEl
+    saveEl.textContent += countStr
+    
+    // reset the count to 0
+    reset()
+}
 
 function reset() {
     count = 0 // reset the count variable to 0
