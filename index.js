@@ -120,3 +120,8 @@ function increment() {
 }
 
 
+function reset() {
+    count = 0 // reset the count variable to 0
+    console.log(count) // log the reset count value to the console
+    document.getElementById("count").innerText = count // update the HTML element with the reset count
+}
