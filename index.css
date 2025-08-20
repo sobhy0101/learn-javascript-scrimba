@@ -36,3 +36,7 @@ button {
     background: darkgreen;
 }
 
+/* Add a hover effect to the buttons */
+button:hover {
+    opacity: 0.8;
+}
