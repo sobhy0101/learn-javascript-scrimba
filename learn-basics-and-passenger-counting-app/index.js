@@ -111,30 +111,92 @@
 // increment the count variable when the button is clicked (log it out)
 // change the count-el in the HTML to reflect the new count
 
-let count = 0
+// let count = 0
 
-function increment() {
-    count ++ // increment the count variable by 1
-    console.log(count) // log the new count value to the console
-    document.getElementById("count").innerText = count // update the HTML element with the new count
-}
+// function increment() {
+//     count ++ // increment the count variable by 1
+//     console.log(count) // log the new count value to the console
+//     document.getElementById("count").innerText = count // update the HTML element with the new count
+// }
 
-function save() {
-    // create a variable that contains the count and the string " - "
-    let countStr = count + " | "
+// function save() {
+//     // create a variable that contains the count and the string " - "
+//     let countStr = count + " | "
     
-    // get the element with id "save-el"
-    let saveEl = document.getElementById("save-el")
+//     // get the element with id "save-el"
+//     let saveEl = document.getElementById("save-el")
     
-    // append the countStr to the saveEl
-    saveEl.textContent += countStr
+//     // append the countStr to the saveEl
+//     saveEl.textContent += countStr
     
-    // reset the count to 0
-    reset()
-}
+//     // reset the count to 0
+//     reset()
+// }
 
-function reset() {
-    count = 0 // reset the count variable to 0
-    console.log(count) // log the reset count value to the console
-    document.getElementById("count").innerText = count // update the HTML element with the reset count
-}
+// function reset() {
+//     count = 0 // reset the count variable to 0
+//     console.log(count) // log the reset count value to the console
+//     document.getElementById("count").innerText = count // update the HTML element with the reset count
+//     document.getElementById("save-el").textContent = "Saved Counts: " // reset the saved counts display
+// }
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+// // First name and last name variables with full name concatenation
+// let firstName = "Mike";
+// let lastName = "Sobhy";
+// let fullName = firstName + " " + lastName; // Concatenate first name and last name with a space in between
+
+// // Log the full name to the console
+// console.log(fullName);
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+// let firstName = "Linda"
+// let greeting = "Hi there"
+
+// // Create a function that logs out "Hi there, Linda!" when called
+
+// function greet() {
+//     console.log(greeting + ", " + firstName + "!")
+// }   
+
+// greet()
+
+/////////////////////////////////////////////////////////////////////////////
+
+// let myPoints = 3
+
+// // Create two functions, add3Points() and remove1Point(), and have them
+// // add/remove points to/from the myPoints variable
+
+// function add3Points() {
+//     myPoints += 3 // Add 3 points to myPoints
+// }
+
+// add3Points()
+// add3Points()
+// add3Points()
+
+// function remove1Point() {
+//     myPoints -= 1 // Remove 1 point from myPoints
+// }
+
+// remove1Point()
+// remove1Point()
+
+
+// // Call the functions to that the line below logs out 10
+// console.log(myPoints)
+
+/////////////////////////////////////////////////////////////////////////////
+
+// Try to predict what each of the lines will log out
+console.log("2" + 2) // "22" String always takes precedence over number
+console.log(11 + 7) // 18
+console.log(6 + "5") // "65" The double quotes indicate it is a string
+console.log("My points: " + 5 + 9) // "My points: 59" Because the first part is a string, it concatenates the numbers 5 & 9 to it reglecting the addition.
+console.log(2 + 2) //  4
+console.log("11" + "14") // "1114" 
