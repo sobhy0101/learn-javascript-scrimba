@@ -1,39 +1,39 @@
 <html>
-
-<head>
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-    <div class="container">
-        <div>
-            <h3>HOME</h3>
-            <h1 id="home--score">0</h1>
-            <dix class="increment-buttons">
-                <button id="home--plus1">+1</button>
-                <button id="home--plus2">+2</button>
-                <button id="home--plus3">+3</button>
-            </dix>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scoreboard">
+      <div class="teams">
+        <div class="home">
+          <h3>HOME</h3>
+          <span id="home-display" class="score">0</span>
+          <div class="buttons">
+            <button class="add-points" onclick="homePlusOne()">+1</button>
+            <button class="add-points" onclick="homePlusTwo()">+2</button>
+            <button class="add-points" onclick="homePlusThree()">+3</button>
+          </div>
         </div>
-    </div>
-    <div class="container">
-        <div>
-            <h3>GUEST</h3>
-            <h1 id="guest--score">0</h1>
-            <dix class="increment-buttons">
-                <button id="home--plus1">+1</button>
-                <button id="home--plus2">+2</button>
-                <button id="home--plus3">+3</button>
-            </dix>
+        <div class="guest">
+          <h3>GUEST</h3>
+          <span id="guest-display" class="score">0</span>
+          <div class="buttons">
+            <button class="add-points" onclick="guestPlusOne()">+1</button>
+            <button class="add-points" onclick="guestPlusTwo()">+2</button>
+            <button class="add-points" onclick="guestPlusThree()">+3</button>
+          </div>
         </div>
+      </div>
+
+      <div id="reset-ctn">
+        <button id="reset-btn" onclick="resetScores()">RESET</button>
+      </div>
     </div>
-    
 
-
-
-    <hr>
-    <img src="empty-state.png" alt="basketball" class="basketball">
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

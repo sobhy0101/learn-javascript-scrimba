@@ -1,78 +1,103 @@
-@font-face {
-    font-family: 'CursedTimer';
-    src: url('fonts/CursedTimerUlil-Aznm.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    margin: 0;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #1B244A;
-    width: 300px;
-    margin: 20px auto 0 auto;
-    height: 400px;
-}
-
-img.basketball {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    margin: 20px auto 0 auto;
-    width: 600px;
-}
-
-hr {
-    border: 0;
-    height: 5px;
-    background: #333;
-    margin: 20px 0 0 0;
-}
-
-h3 {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-    margin: 0;
-    padding: 10px 0 10px 0;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .scoreboard {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 300px;
-    margin-top: 50px;
+  background-color: #1b244a;
+  border-radius: 10px;
+  width: 575px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 24px;
 }
 
-h1 {
-    color: #F94F6D;
-    font-family: CursedTimer, sans-serif;
-    font-size: 80px;
-    margin: 0;
-    background-color: black;
-    text-align: center;
-    line-height: 150px;
+.score {
+  background-color: #080001;
+  color: #f94f6d;
+  font-family: "Cursed Timer ULiL";
+  font-size: 90px;
+  width: 155px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.increment-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 9px;
-    margin-top: 20px;
+.teams {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
 }
-button {
-    width: 45px;
-    height: 45px;
-    font-size: 12px;
-    border: solid 2px lightgray;
-    color: white;
-    cursor: pointer;
-    background-color: transparent;
-    font-family: cursedtimer, sans-serif;
+
+.home,
+.guest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.add-points {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid #9aabd8;
+  background-color: #1b244a;
+  color: #9aabd8;
+  font-family: "Cursed Timer ULiL";
+  font-size: 18px;
+  text-align: center;
+}
+
+.add-points:hover {
+  cursor: pointer;
+}
+
+#reset-ctn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#reset-btn {
+  width: 90px;
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid #9aabd8;
+  background-color: #1b244a;
+  color: #9aabd8;
+  font-family: "Cursed Timer ULiL";
+  font-size: 18px;
+  text-align: center;
+}
+
+#reset-btn {
+  cursor: pointer;
+}
+
+h3 {
+  color: #eee;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 40px;
+  margin: 0;
+  line-height: 1;
 }
