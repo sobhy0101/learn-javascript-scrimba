@@ -194,9 +194,12 @@
 /////////////////////////////////////////////////////////////////////////////
 
 // Try to predict what each of the lines will log out
-console.log("2" + 2) // "22" String always takes precedence over number
-console.log(11 + 7) // 18
-console.log(6 + "5") // "65" The double quotes indicate it is a string
-console.log("My points: " + 5 + 9) // "My points: 59" Because the first part is a string, it concatenates the numbers 5 & 9 to it reglecting the addition.
-console.log(2 + 2) //  4
-console.log("11" + "14") // "1114" 
+// console.log("2" + 2) // "22" String always takes precedence over number
+// console.log(11 + 7) // 18
+// console.log(6 + "5") // "65" The double quotes indicate it is a string
+// console.log("My points: " + 5 + 9) // "My points: 59" Because the first part is a string, it concatenates the numbers 5 & 9 to it reglecting the addition.
+// console.log(2 + 2) //  4
+// console.log("11" + "14") // "1114" 
+
+
+/////////////////////////////////////////////////////////////////////////////

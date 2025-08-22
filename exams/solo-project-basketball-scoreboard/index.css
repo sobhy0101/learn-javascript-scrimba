@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'CursedTimer';
+    src: url('fonts/CursedTimerUlil-Aznm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #1B244A;
+    width: 300px;
+    margin: 20px auto 0 auto;
+    height: 400px;
+}
+
+img.basketball {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin: 20px auto 0 auto;
+    width: 600px;
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    background: #333;
+    margin: 20px 0 0 0;
+}
+
+h3 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #F94F6D;
+    font-family: CursedTimer, sans-serif;
+    font-size: 80px;
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    line-height: 150px;
+}
+
+.increment-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    margin-top: 20px;
+}
+button {
+    width: 45px;
+    height: 45px;
+    font-size: 12px;
+    border: solid 2px lightgray;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: cursedtimer, sans-serif;
+}
