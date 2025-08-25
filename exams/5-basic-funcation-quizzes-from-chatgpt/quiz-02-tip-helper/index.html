@@ -10,9 +10,10 @@
 
 <main class="shell">
   <h1>Tip Helper</h1>
+  <h3>Calculate your tip and total bill</h3>
   <div class="panel">
     <label>Bill (EGP)
-      <input id="bill" type="number" min="0" placeholder="0.00"/>
+      <input id="bill" type="number" min="0" placeholder="0.00" oninput="onBillInput()"/>
     </label>
     <fieldset class="tips">
       <legend>Tip %</legend>
@@ -20,7 +21,7 @@
       <label><input type="radio" name="tip" value="15" checked>15%</label>
       <label><input type="radio" name="tip" value="20">20%</label>
     </fieldset>
-    <button id="calc" disabled>Calculate</button>
+    <button id="calc" onclick="calculate()">Calculate</button>
     <div class="results">
       <p>Tip: <strong id="tip-amount">—</strong></p>
       <p>Total: <strong id="total">—</strong></p>
