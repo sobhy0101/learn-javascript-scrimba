@@ -2,10 +2,12 @@
 
 Install and run:
 
-```
+## Install npm
+
 npm install
 npm start
-```
+
+<!-- end of starting npm -->
 
 ## Your Tasks
 
@@ -14,7 +16,6 @@ npm start
 3. Add a **Reset** button that sets the count back to 0.
 4. Update the background of `.card` to a lighter shade when the count is even.
 5. Log each action to the console.
-
 
 > JS file is intentionally empty. Add your code in `index.js`.
 
