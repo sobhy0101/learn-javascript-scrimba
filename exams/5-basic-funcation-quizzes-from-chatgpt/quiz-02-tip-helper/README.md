@@ -2,10 +2,10 @@
 
 Install and run:
 
-```
+## install npm
+
 npm install
 npm start
-```
 
 ## Your Tasks
 
@@ -14,7 +14,6 @@ npm start
 3. Disable the **Calculate** button unless the bill is a positive number.
 4. When input changes, clear previous results.
 5. Add a keyboard shortcut: Enter triggers calculate.
-
 
 > JS file is intentionally empty. Add your code in `index.js`.
 
