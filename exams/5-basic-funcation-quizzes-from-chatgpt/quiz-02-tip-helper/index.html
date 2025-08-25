@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz 02 — Tip Helper</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<main class="shell">
+  <h1>Tip Helper</h1>
+  <div class="panel">
+    <label>Bill (EGP)
+      <input id="bill" type="number" min="0" placeholder="0.00"/>
+    </label>
+    <fieldset class="tips">
+      <legend>Tip %</legend>
+      <label><input type="radio" name="tip" value="10">10%</label>
+      <label><input type="radio" name="tip" value="15" checked>15%</label>
+      <label><input type="radio" name="tip" value="20">20%</label>
+    </fieldset>
+    <button id="calc" disabled>Calculate</button>
+    <div class="results">
+      <p>Tip: <strong id="tip-amount">—</strong></p>
+      <p>Total: <strong id="total">—</strong></p>
+    </div>
+  </div>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
