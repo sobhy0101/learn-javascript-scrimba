@@ -8,8 +8,12 @@ let messageEl = document.getElementById("message-el")
 let cardsEl = document.querySelector("#card-el") // same as document.getElementById("card-el") | Use # for id and . for class.
 let sumEl = document.querySelector("#sum-el")
 
-
+// Create a new function called startGame() that calls renderGame()
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
     if (sum <= 20) {
         message = "Do you want to draw a new card? 🙂"
     } else if (sum === 21) {
@@ -26,13 +30,9 @@ function startGame() {
 
 
 function newCard() {
-    console.log("Drawing a new card from the deck!")
-    // 1. Create a card variable, and hard code its value to a number (2-11)
-        let card = 4    
-    // 2. Add the new card to the sum variable
-        sum += card
-    // 3. Call startGame()
-        startGame()
+    let card = 4    
+    sum += card
+    renderGame()
 }
 
 
