@@ -1,19 +1,19 @@
 /* Complete the CSS styling according to the provided design */
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("images/table.png");
-    background-size: cover;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url("images/table.png");
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
 }
 
 h1 {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 #message-el {
@@ -27,14 +27,14 @@ width      - 150px
 background - goldenrod
  */
 
- button {
-    color: #016f32;
-    width: 200px;
-    background-color: goldenrod;
-    border: none;
-    padding: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
- }
+button {
+  color: #016f32;
+  width: 200px;
+  background-color: goldenrod;
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
