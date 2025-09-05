@@ -20,6 +20,6 @@ function startGame() {
         message = "You're out of the game! 😭"
         isAlive = false
     }
-    sumEl.innerHTML = "Sum: " + sum
+    sumEl.textContent = "Sum: " + sum
     messageEl.textContent = message
 }
