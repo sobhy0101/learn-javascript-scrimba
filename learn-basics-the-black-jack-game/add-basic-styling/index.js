@@ -8,7 +8,10 @@ let message = ""
 let messageEl = document.getElementById("message-el")
 
 // 2. Store the sum paragraph in a variable called sumEl
-let sumEl = document.getElementById("sum-el")
+//let sumEl = document.getElementById("sum-el")
+
+// 3. There is another way to grab an element from the HTML using a method called querySelector().
+let cardEl = document.querySelector("#card-el") // same as document.getElementById("card-el") | Use # for id and . for class.
 
 function startGame() {
     if (sum <= 20) {
