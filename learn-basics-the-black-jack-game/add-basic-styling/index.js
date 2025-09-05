@@ -4,15 +4,13 @@ let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
 let message = ""
-
 let messageEl = document.getElementById("message-el")
+let cardsEl = document.querySelector("#card-el") // same as document.getElementById("card-el") | Use # for id and . for class.
 
-// 2. Store the sum paragraph in a variable called sumEl
-//let sumEl = document.getElementById("sum-el")
+// 2. Store the cards paragraph in a variable called cardsEl
+let sumEl = document.querySelector("#sum-el")
 
-// 3. There is another way to grab an element from the HTML using a method called querySelector().
-let cardEl = document.querySelector("#card-el") // same as document.getElementById("card-el") | Use # for id and . for class.
-
+// 3. Render the cars on the page using this format -> "Cards: 10 4"
 function startGame() {
     if (sum <= 20) {
         message = "Do you want to draw a new card? 🙂"
@@ -24,5 +22,6 @@ function startGame() {
         isAlive = false
     }
     sumEl.textContent = "Sum: " + sum
+    cardsEl.textContent = "Cards: " + firstCard + " "  + secondCard
     messageEl.textContent = message
 }
