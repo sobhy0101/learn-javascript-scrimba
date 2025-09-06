@@ -5,7 +5,7 @@ let hasBlackJack = false
 let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
-let cardsEl = document.querySelector("#card-el") // same as document.getElementById("card-el") | Use # for id and . for class.
+let cardsEl = document.querySelector("#cards-el") // same as document.getElementById("card-el") | Use # for id and . for class.
 let sumEl = document.querySelector("#sum-el")
 
 // Create a new function called startGame() that calls renderGame()
@@ -30,8 +30,9 @@ function renderGame() {
 
 
 function newCard() {
-    let card = 4    
+    let card = 4
     sum += card
+    cardsEl.textContent += " " + card
     renderGame()
 }
 
