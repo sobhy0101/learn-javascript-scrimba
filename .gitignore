@@ -145,3 +145,4 @@ vite.config.ts.timestamp-*
 *.zip
 node_modules/
 dist/
+learn-javascript-scrimba/
